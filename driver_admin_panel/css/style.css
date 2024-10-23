@@ -1,0 +1,276 @@
+/* Custom Stylesheet */
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main{
+  flex: 1 0 auto;
+}
+ 
+html{
+  font-family: 'Catamaran', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*CUSTOM CLASSES*/
+
+/*Colors*/
+
+.custom-text-orange{
+  color: rgb(239, 203, 104);
+}
+
+.custom-orange{
+  background-color: rgb(239, 203, 104);
+}
+
+.custom-text-blue{
+  color: rgb(92, 122, 255);
+}
+
+.custom-blue {
+  background-color: rgb(92, 122, 255);
+}
+
+.custom-text-honeydev {
+  color: rgb(225, 239, 230);
+}
+
+.custom-honeydev{
+  background-color: rgb(225, 239, 230);
+}
+
+.custom-text-gray{
+  color: rgb(174, 183, 179);
+}
+
+.custom-gray{
+  background-color: rgb(174, 183, 179);
+}
+
+.custom-text-green{
+  color: rgb(66, 107, 105);
+}
+
+.custom-green{
+  background-color: rgb(66, 107, 105);
+}
+
+/*Other custom classes*/
+
+.custom-margin-left{
+margin-left: 300px;
+}
+
+.custom-td{
+  min-width: 100px;
+}
+
+.custom-row{
+  padding: 1rem;
+  border-bottom: solid 1px rgb(229, 229, 229);
+}
+
+.custom-td-width{
+  max-width: 125px;
+}
+
+.custom-select-width{
+  max-width: 75px;
+}
+
+.custom-placeholder::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(160, 160, 160);
+  opacity: 1 !important; /* Firefox */
+}
+  
+/*CUSTOM ELEMENTS*/
+
+/*progress bar*/
+.progress-bar-container{
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+
+#progress-bar{
+  height: 100%;
+  background: #ffd740;
+  width: 0;
+}
+
+/*other custom elements*/
+
+#modal-login, #login-container, #register-container{
+max-width: 500px;
+}
+
+#testimonial-section{
+background-image: url("../img/testimonial-background.jpg");
+background-repeat: no-repeat;
+height: 650px;
+background-size: cover;
+}
+
+#nav-mobile li{
+  display: block;
+}
+
+#logout-message{
+  margin-top: 100px;
+}
+
+#accountInfoTitle{
+border-bottom: solid 1px rgb(229, 229, 229);
+padding-top: 24px;
+}
+
+#userInfoContent{
+  padding: 0;
+}
+
+#userInfoModal{
+  max-width: 400px;
+}
+
+/*DOM MANIPULATION RELATED*/
+
+#send-parcel-form, #order-sent, 
+#orders-list-user, .order-details, 
+#save-order-changes-admin,
+#orders-list-admin, #register-confirmation, 
+#user-content, #admin-content, 
+.logged-in, .logged-out{
+  display: none; 
+}
+
+/*CUSTOMIZATION OF EXISTING MATERIALIZE CLASSESS*/
+
+nav ul a,
+nav .brand-logo{
+  color: #444;
+}
+
+p{
+  line-height: 2rem;
+}
+
+.sidenav-trigger{
+  color: #26a69a;
+}
+
+.parallax-container{
+  min-height: 600px;
+  line-height: 0;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section{
+    width: 100%;
+}
+
+.icon-block{
+  padding: 0 15px;
+}
+
+.icon-block .material-icons{
+  font-size: inherit;
+}
+
+footer.page-footer{
+  margin: 0;
+}
+
+.carousel{ 
+  min-height: 650px;
+}
+
+.carousel-item{
+  min-height: 400px;
+  top: 50px;
+}
+
+.testimonial{
+  font-family: 'Old Standard TT', serif;
+}
+
+.parallax-container.custom-full-screen{
+  height: 100vh;
+}
+
+.sidenav.user-nav{
+    background-image: url("../img/third-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidenav.side-nav-main{
+  background-image: url("../img/mobile-nav-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+.asterix{
+ color: red !important;
+} 
+
+/*MEDIA QUERRIES*/
+
+@media only screen and (max-width : 992px){
+
+  #index-banner .section{
+    top: 10%;
+  }
+
+  #img2{
+    height: 100%;
+    width: 50%;
+  }
+
+  .parallax-container{
+    height: 500px;
+  }
+
+  .custom-margin-left{
+    margin-left: 0;
+  }
+
+  #logout-message{
+    margin-top: 0;
+  }
+
+  td{
+    max-height: 51px;
+    line-height: 2;
+  }
+
+  th{
+    max-height: 51px;
+    line-height: 2;
+  }
+
+}
+
+@media only screen and (max-width : 600px){
+  #index-banner .section{
+    top: 0;
+  }
+
+  .custom-login-form{
+  margin: auto 0 auto 0;
+  }
+
+}
